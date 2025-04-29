@@ -7,7 +7,7 @@ const Header = ()=>{
         <section className="">
           <div className="flex max-sm:flex-col min-sm:flex items-center gap-2 p-2 bg-black  min-sm:text-white">
             <div>Phone: </div>
-            <h1 >+255 766 715 344</h1>
+            <h1 >+255 +255 683-977077</h1>
         </div>
           <div className="flex max-sm:flex-col min-sm:flex min-sm:align-middle gap-[1px]">
             <ul className="flex max-sm:flex-col min-sm:flex justify-center items-center gap-8">

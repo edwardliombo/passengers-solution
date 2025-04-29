@@ -6,6 +6,8 @@ import Footer from "@/app/components/Footer"
 import Missionvission from "@/app/components/Missionvission"
 import db from "@/app/data/db"
 import Information from "@/app/components/Information"
+import Informationb from "@/app/components/Informationb"
+import Map from "@/app/components/Map"
 
 export default async function Home() {
   const dataFetch = await fetch("https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=a4d68a0a30cb49eeadc3fe8bff763b31");
@@ -25,7 +27,8 @@ export default async function Home() {
         
       </div>
       <Information />
-      <Title title="Today Updates:" />
+      <Informationb />
+      <Title className="border-black border-b-2" title="Today Updates:" />
       <div className="grid grid-cols-4 max-sm:grid-cols-1 gap-4 mt-3 p-4">
         {
         
@@ -34,6 +37,7 @@ export default async function Home() {
         ))}
 
       </div>
+      <Map />
       <Footer />
     </section>
  )

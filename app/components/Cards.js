@@ -1,9 +1,10 @@
+import * as motion from "motion/react-client"
 import Image from "next/image";
 import Link from "next/link";
 const Card = ({author,title, description, image, date})=>{
     return (
         <Link href="#"> 
-            <div className="flex w-full h-full flex-col gap-4 shadow-sm  rounded-md p-4">
+            <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.3}} className="flex w-full h-full flex-col gap-4 shadow-sm  rounded-md p-4">
                 <div className="relative h-52">
                     <Image className="rounded-t-md w-full" src={image} fill alt="passport" />
                 </div>
@@ -17,7 +18,7 @@ const Card = ({author,title, description, image, date})=>{
                     <span className="font-bold w-full text-sky-800 text-justify ">{title} </span>
                     <div className="text-justify">{description}</div>
                 </div>
-            </div>
+            </motion.div>
         </Link> 
     )
 }
